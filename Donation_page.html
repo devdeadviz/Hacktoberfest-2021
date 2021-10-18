@@ -79,6 +79,23 @@ p {
 .container-fluid {
   padding: 7% 15%;
 }
+/*card body*/
+.card-body:hover{
+  transform: scale(1.04);
+  transition:ease 0.6s;
+  background-color: #C490E4;
+  color: white;
+}
+.card-body:hover p{
+  color: white;
+}
+#card-body-about:hover{
+  transform: scale(1);
+  background-color: white;
+}
+#card-body-about:hover p{
+color: #8f8f8f;
+}
 
 /* Sections */
 .colored-section {
@@ -95,7 +112,7 @@ p {
   margin: 3% 5% 3% 0;
 }
 .donate-button:hover {
-  background-color: ##ffc107;
+  background-color: #ffc107;
 }
 
 /* Modal */
@@ -327,7 +344,7 @@ p {
       <div class="job-column col-lg-4 col-md-6">
         <div class="card">
           <img class="card-img-top" src="images/About_Us.jpg" alt="Card image cap" />
-          <div class="card-body">
+          <div class="card-body" id="card-body-about">
             <h3 class="job-text">About Us</h3>
             <p>
               Our organisation had made a collaboration with government of
@@ -342,7 +359,7 @@ p {
       <div class="job-column col-lg-4 col-md-6">
         <div class="card">
           <img class="card-img-top" src="images/Providing_Help.jpg" width="400px" height="196px" alt="Card image cap" />
-          <div class="card-body">
+          <div class="card-body" id="card-body-about">
             <h3 class="job-text">Providing Help</h3>
             <p>
               We provide necessary foods and its suplements through anganwadi,
@@ -358,7 +375,7 @@ p {
       <div class="job-column col-lg-4 col-md-6">
         <div class="card">
           <img class="card-img-top" src="images/Health_Camp.jpg" alt="Card image cap" />
-          <div class="card-body">
+          <div class="card-body" id="card-body-about">
             <h3 class="job-text"> organising health camp</h3>
             <p>
               Malnutrition in India is a complex problem that requires
