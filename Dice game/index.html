@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="Dice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Let's Start 🎲</h1>
+
+        <div class="dice">
+            <p>Player 1</p>
+            <img class="img1" src="images/dice6.png">
+        </div>
+
+        <div class="dice">
+            <p>Player 2</p>
+            <img class="img2" src="images/dice6.png">
+        </div>
+    </div>
+
+    <script src="Dice.js"></script>
+
+    <script>
+        function Refresh() {
+            window.parent.location = window.parent.location.href;
+        }
+    </script>
+</body>
+
+  <footer>
+    <button class="btn" type="button" onClick="Refresh()">PLAY</button><br>
+      Designed by DIWAKAR TIWARI
+  </footer>
+</html>
