@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Maze Project</title>
+</head>
+<style type="text/css">
+body{
+    margin: 0;
+}
+.hidden{
+    display: none !important;
+}
+.winner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+h1{
+    color: white;
+    font-size: 40px;
+}
+</style>
+<body>
+    <!-- <h1>Enter Difficulty Level</h1>
+    <input type="text" id="tar"> <br> -->
+    <div class="winner hidden">
+        <div>
+        <h1>YOU WIN!</h1><br>
+        <a href="./index.html"><button class="btn btn-success"id="Again">Go Again</button></a>
+    </div>
+    </div>
+    <div class="jumbotron shut">
+        <div class="text-center">
+        <h1 class="display-4 text-dark">Maze Game</h1>
+        <h1 class="text-dark">Difficulty Level</h1>
+        <input type="number" id="input1" placeholder="rows" min="4" max="15">
+        <input type="number" id="input2" placeholder="columns" min="4" max="20">
+        <button class="btn btn-success"id="submit">Go</button>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js" integrity="sha512-pi0tSRZdlNRZeANPwdAIHRAYg6gZZV6QlAiyHXn5TYqLzBKE9jlttO/QgYLMhISD6oNv2kPsVelx+n5nw0FqKA==" crossorigin="anonymous"></script>
+    <script src="func.js"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
